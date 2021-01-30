@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Yakovlev Ilya</title>
+    <style>
+        body {
+            margin: 0;
+        }
+        #page {
+            display: flex;
+        }
+        #left {
+            background: url("img/star.png") #f4e2cf no-repeat;
+            background-size: 100%;
+            flex: 0 0 200px;
+            position: sticky;
+            top: 0;
+            height: 100vh;
+            order: 1;
+            z-index: 1000;
+            padding: 405px 5px 5px 5px;
+            box-sizing: border-box;
+        }
+        iframe {
+            flex: 1 1 auto;
+            order: 2;
+        }
+        #right {
+            background: #ccc7ea url("img/tom.png") bottom no-repeat;
+            background-size: 100%;
+            flex: 0 0 200px;
+            height: 100vh;
+            position: sticky;
+            top: 0;
+            order: 3;
+            z-index: 1000;
+        }
+        footer {
+            background-color: antiquewhite;
+        }
+        li {
+            list-style-type: "☆ ";
+        }
+    </style>
+</head>
+<body>
+    <nav></nav>
+    <div id="page">
+        <div id="left">
+            <ul>
+                <li> <a href="chapters/5.1.html" target="content">5.1. Понятие алгоритма. Машины Тьюринга </a></li>
+                <li><a href="chapters/5.2.html" target="content">5.2. Рекурсивные функции. Нормальные алгоритмы Маркова</a></li>
+            </ul>
+        </div>
+        <div id="right"></div>
+
+        <iframe src="intro.html" name="content" frameborder="0"></iframe>
+    </div>
+
+    <footer></footer>
+</body>
+</html>
